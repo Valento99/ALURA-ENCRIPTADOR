@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 	
+  <meta charset="utf-8"> 
+	<title>Challenge Encriptador</title> 	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  	<meta name="author" content="Valentin Moreno Vasquez">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+</head> 
+<body> 
+  <main>
+     <section class="contenedor"> 			
+	      <div class="columnas columna1">
+          <img src="imagenes/Logo.png" class ="logo" alt="logo de Alura">
+	    	  <textarea id="mensaje" rows="8" placeholder="ingrese el texto aquí..." class="mensaje"></textarea>
+          <div class="botones">
+            <p>Solo letras minúsculas y sin acentos</p>
+            <button id="boton-encriptar" class="boton-encriptar">Encriptar</button>
+            <button id="boton-desencriptar" class="boton-desencriptar">Desencriptar</button>
+          </div>
+        </div> 			
+	    	<div class="columnas columna2">
+	    	  <div id="sin-mensaje" class="sin-mensaje">
+            <img src="imagenes/notfound.png" class="imagen-not" alt="sin mensaje">
+            <h1>Ningún mensaje fue encontrado</h1>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+          <div>
+          <p id="resultado-texto" class="resultado-texto"></p>
+          </div class="botones">
+          <button id="boton-copiar" class="boton-copiar">Copiar</button>
+        </div> 		
+	    </section> 
+	  </main> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://kit.fontawesome.com/7cf8a24f66.js" crossorigin="anonymous"></script>  
+  <script src="app.js"></script>
+</body>
+<footer>
+  
+</footer>
+</html>
+
